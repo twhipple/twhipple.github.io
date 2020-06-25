@@ -1,11 +1,11 @@
 # Site settings
-author: Thomas Whipple
-title: 
+author: TJ Whipple
+title: Exploring Data Science
 header-img: img/home-bg.png
 email: mrtjwhipple@gmail.com
-copyright_name: Thomas Whipple
+copyright_name: TJ Whipple
 description: > # this means to ignore newlines until "baseurl:"
-  
+  A Junior Data Scientist Blog
 baseurl: "" # the subpath of your site, e.g. /blog
 twitter_username: 
 github_username:  twhipple
