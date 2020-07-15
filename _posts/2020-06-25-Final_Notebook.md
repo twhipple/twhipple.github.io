@@ -81,6 +81,8 @@ While the data for for skier age was insufficient enough to make any valid concl
 ## Types of Tickets
 The resort offered a few different ticket options but as you can see from the graph below that single-day adult tickets were far and away the most common. It may be useful to see youth tickets separated from senior tickets or to pursue other ticket packages as well. My local resort is probably focused on day visitors as opposed to the larger resorts that are more focued on multi-day stays and overnight bookings.
 <br>
+![](https://raw.githubusercontent.com/twhipple/twhipple.github.io/master/img/Ticket_options.png)
+
 ![](https://raw.githubusercontent.com/twhipple/twhipple.github.io/master/img/Final_Notebook_66_0.png)
 
 ## Planning Time
@@ -91,7 +93,11 @@ From a marketing standpoint I had hoped to learn more about the skier habits of 
 
 
 # Summary
-Skiers further away tended to buy their tickets more in advance (having a higher 'order mean') but not exclusively. The cluster with the most people were the skiers who lived the closest to the mountain. And obviously the group with the highest ticket revenue were those with the most adult ticket purchases (since adult tickets cost more than youth/senior). Without address information (or unique identifiers) from the Liftopia.com website it was difficult to include these customers into the dataset.
+Skiers further away tended to buy their tickets more in advance (having a higher 'order mean') but not exclusively - in fact the data showed there was a group of people who just tend to plan more in advance (Furthermore, some skiers may be using a non-local home address when they in fact live in a nearby city or town).
+
+The two clusters with the most people were the skiers who lived the closest to the mountain - within approximately two hours. And obviously the group with the highest ticket revenue were those with the most adult ticket purchases (since adult tickets cost more than youth/senior). But it was the skiers in the cluster who returned more than once or bought multiple tickets that affected the revenue the most.
+
+I was really only able to use data from the Magic website for my conclusions. Without address information (or unique identifiers) from the Liftopia.com website it was difficult to include these customers into the dataset since I needed zip code information to plot where skiers were from, how far they traveled, and the regions that show the most customers.
 
 
 
@@ -111,3 +117,6 @@ For about 100 dollars I could accurately calculate the driving distance for each
 ### United States Zip Code Demographic
 For about 200 dollars I could include much more specific demographic information for each zip code in my dataset - including income and education levels, home and rental costs, specific age and gender stats as well as all population numbers.
 <a href="https://www.unitedstateszipcodes.org/zip-code-database/">United States Zip Code Demographic Link</a>
+
+# Jupyter Final_Notebook
+For more information on the individual clusters or other stats from my project, please visit my Jupyter Notebook on GitHub.
