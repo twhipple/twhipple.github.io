@@ -6,7 +6,7 @@ email: mrtjwhipple@gmail.com
 copyright_name: TJ Whipple
 description: > # this means to ignore newlines until "baseurl:"
   A Junior Data Scientist Blog
-baseurl: "2020-06-25-Final_Notebook.md" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 twitter_username: 
 github_username:  twhipple
 
