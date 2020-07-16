@@ -1,12 +1,14 @@
 ---
 layout: post
-title:      "Ski Resort Full Analysis"
+title:      "Executive Summary"
 date:       2020-07-17
-permalink:  final_notebook
+permalink:  executive_summary
 ---
 
 # Introduction
-For my data science capstone project, I was able to get four years of skier data from my local ski resort. Not only do I enjoy skiing, but thought I might be able to help out this small resort by providing some useful data analysis. Many of the big ski resort conglomerates have data science teams who examine a wide variety of customer data ranging from the most the popular ski lifts that people ride on a given day to the most sought after types of food ordered at the high mountain lodge. Nevertheless, with the data that was shared with me, I was able to create some fun visuals, explore different aspects of the data, and gain insight about the different customers visiting the resort.
+Thank you to Magic Mountain Resort for providing me with the four years of skier data from my local resort.
+Hopefully the information in this summary is useful and can be applied in a meaningful manner.
+After much research and review of the data that was shared with me, I was able to use a data science algorithm to help me cluster skiers based on similar characteristics. I put the skiers into five categories: The Money-Makers, The Family Group, The Planners, The Travelers, and the largest group, The One-Time Visitors.The specific details for each group can be found in Conclustions below.
 
 # Contents
 * Modeling
@@ -14,12 +16,6 @@ For my data science capstone project, I was able to get four years of skier data
 * Summary
 * Future Recommendations
 
-# Modeling
-After much EDA and review of the data that was shared with me, I ended up using a data science algorithm to help me group skiers based on similar characteristics. I put the skiers into five categories: The Money-Makers, The Family Group, The Planners, The Travelers, and the largest group, The One-Time Visitors. The specific details for each group can be found in Conclustions below.
-
-While the majority of the features had insufficient data for me to work with and needed to be deleted. I did so some entry level statistics on types of skiers, skier age, and ability level but do not believe that it accurately represents the whole customer population. I had to do a lot of cleaning of the zip codes which I needed in order to create folium maps as well as determine skier distance from resort. I tried to group the customers according to some unique characteristics in order to look at those skiers who returned more than once, how far they traveled, how far in advance they ordered tickets, and what types of tickets they bought.
-
-A note on semantics - while the resort certainly is shared by both skiers and snowboarders, I will use the term 'skiers' to include all manner of customers who enjoy the mountain. From alpine skiers to telemarker (free-heel) skiers, mono and sit-skiers (Paraplegic and Tetraplegic skiers) to snowboarders (as well as ski bikes, which I have seen at the resort but are not allowed everywhere).
 
 
 # Visualizations
@@ -81,7 +77,7 @@ While the data for for skier age was insufficient enough to make any valid concl
 ![](https://raw.githubusercontent.com/twhipple/twhipple.github.io/master/img/Final_Notebook_40_0.png)
 
 ## Types of Tickets
-The resort offered a few different ticket options but as you can see from the graph below that single-day adult tickets were far and away the most common. It may be useful to see youth tickets separated from senior tickets or to pursue other ticket packages as well. My local resort is probably focused on day visitors as opposed to the larger resorts that are more focued on multi-day stays and overnight bookings.
+* Single-day, adult tickets are the most common.
 <br>
 
 ![](https://raw.githubusercontent.com/twhipple/twhipple.github.io/master/img/Ticket_options.png)
@@ -89,54 +85,42 @@ The resort offered a few different ticket options but as you can see from the gr
 ![](https://raw.githubusercontent.com/twhipple/twhipple.github.io/master/img/Final_Notebook_66_0.png)
 
 ## Planning Time
-From a marketing standpoint I had hoped to learn more about the skier habits of purchasing tickets. This graph was created by subtracting the date which customers visited from the date that they bought their tickets. The majority of skiers buy their tickets a day or two in advance - which probably indicates they are most concerned with the weather and snow conditions.
+*
 <br>
 ![](https://raw.githubusercontent.com/twhipple/twhipple.github.io/master/img/Final_Notebook_83_0.png)
 
 
 ## Conclusions
 #### Cluster 1 - The Money Makers
-It looks to me like this cluster contains the customers with the most number of trips and the highest total revenue. This cluster also includes at any large group trip and medium sided groups which visited the resort. The high number of adult tickets adds to the total revenue as well as returning more than once.
+* Had the highest number of trips, revenue, and multiple tickets bought (came in groups).
 
 #### Cluster 3  - The Travelers
-This cluster has the highest average distance to resort, which includes possibly all of the outliers who traveled the farthest. Oddly, this cluster does not contain the greatest order to trip dates, meaning that these customers bought their tickets and decided to go with little preparation (an median average of only a couple days). I suppose there is no way of knowing if some of these people have relocated to major cities near the resort such as Boston, Philly, or New York and are just using their original home addresses or if they actually traveled via plane/car to visit the resort in under a few days.
+* Had the greatest distance traveled, but not the highest order to trip data.
 
 #### Cluster 2 - Families
-Cluster 2 is the second largest group, with the second largest revenue, and the second largest number of Youth/Senior tickets. I am calling this the family group since it seems like the majority of the customers bought some combination of tickets. This group probably lives within a few hour drive of the resort and the majority of skiers purchase their tickets only a couple days in advance.
+* Second largest group with second highest number of youth/senior tickets.
 
 #### Cluster 0 - One Time Visitors
-Cluster 0 is the largest group. The majority of these people have only visited the mountain one time in the past four years. How can we get these people to come back? How can we get these customers to go from cluster 0 to cluster 1 (the money-making group that returns with larger groups and families)?
+* Largest group with high number of single-day adult tickets.
 
 #### Cluster 4 - The Planners
-This final cluster has the highest mean order to trip date. Meaning that this group of customers are planning to visit the mountain much further in advance than the other groups - even further in advance than groups of people with addresses considerably farther away. For that reason I'm calling them the 'planners'. For whatever reason they have decided they are going skiing on average two months before their trip date - and about two months before most people decide to buy tickets. Perhaps they have very set vacation schedules or limited time off. Either way, they aren't necessarily bringing large groups to the mountain (a mean around 2 people) and their distance to the resort doesn't seem to be that much further than the majority (200 miles - probably close to 4 hours away).
+* Highest mean order to trip date, meaning they planned furthest in advance.
 
 
-# Summary
-Skiers further away tended to buy their tickets more in advance (having a higher 'order mean') but not exclusively - in fact the data showed there was a group of people who just tend to plan more in advance (Furthermore, some skiers may be using a non-local home address when they in fact live in a nearby city or town).
-
-The two clusters with the most people were the skiers who lived the closest to the mountain - within approximately two hours. And obviously the group with the highest ticket revenue were those with the most adult ticket purchases (since adult tickets cost more than youth/senior). But it was the skiers in the cluster who returned more than once or bought multiple tickets that affected the revenue the most.
-
-I was really only able to use data from the Magic website for my conclusions. Without address information (or unique identifiers) from the Liftopia.com website it was difficult to include these customers into the dataset since I needed zip code information to plot where skiers were from, how far they traveled, and the regions that show the most customers.
+# Recommendations
+* Include data from Day-Ticket and Season Pass Holders.
+* Include summer and off-season visitor data.
+* Separate Youth tickets and Senior tickets.
 
 
-
-# Future Recommendations
-
-Include data from Day-Ticket and Season Pass Holders if possible.
-
-Plus, any information about summer and off-season visitors might have some valuable data to explore - I know lots of successful resorts are turning to year-round activities to offset the decline in ski season numbers.
-
-I would also like to split up the Youth/Senior section and look more specifically at age. Unfortunately most of the data didn't include birth dates but it would be interesting to separate kids from seniors purely to look at the numbers.
+# Future work
+With skiers separated into specific clusters it is now possible to target marketing strategies based on the five groups, both for current customers as well as future customers.
 
 ### Google Distance API
-For about 100 dollars I could accurately calculate the driving distance for each customer ($5 per 1000). While I'm not sure if this would change my number significantly, it would certainly be a more accurate statistic.
+For about 100 dollars the Google Distance API can accurately calculate the driving distance for each customer ($5 per 1000 customers) based on zip code. While I'm not sure if this would change the numbers significantly, it would certainly be a more accurate statistic.
 <a href="https://developers.google.com/maps/documentation/distance-matrix/usage-and-billing">Google Maps Distance API Link</a>
 
 
 ### United States Zip Code Demographic
-For about 200 dollars I could include much more specific demographic information for each zip code in my dataset - including income and education levels, home and rental costs, specific age and gender stats as well as all population numbers.
+For about 200 dollars the US Zip Code Demographic can be used to include much more specific demographic information for each zip code in my dataset - including income and education levels, home and rental costs, specific age and gender stats as well as all population numbers.
 <a href="https://www.unitedstateszipcodes.org/zip-code-database/">United States Zip Code Demographic Link</a>
-
-
-# Jupyter FinalNotebook
-For more information on the individual clusters or other stats from my project, please visit my Jupyter Notebook on GitHub.
