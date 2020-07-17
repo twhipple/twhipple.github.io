@@ -6,29 +6,30 @@ permalink:  executive_summary
 ---
 
 # Introduction
-Thank you to Magic Mountain Resort for providing me with the four years of skier data from my local resort.
+Thank you to Magic Mountain for providing me with the four years of skier data from my local ski resort.
 Hopefully the information in this summary is useful and can be applied in a meaningful manner.
-After much research and review of the data that was shared with me, I was able to use a data science algorithm to help me cluster skiers based on similar characteristics. I put the skiers into five categories: The Money-Makers, The Family Group, The Planners, The Travelers, and the largest group, The One-Time Visitors.The specific details for each group can be found in Conclustions below.
+After much research and review of the data that was shared with me, I was able to use a data science algorithm to help me cluster skiers based on similar characteristics. I put the skiers into five categories: The Money-Makers, The Family Group, The Planners, The Travelers, and the largest group, The One-Time Visitors.
 
 ## Conclusions
-### Cluster 0 - One Time Visitors
+### One Time Visitors
 * Largest group with high number of single-day adult tickets.
 
-### Cluster 1 - The Money Makers
+### The Money Makers
 * Had the highest number of trips, revenue, and multiple tickets bought (came in groups).
 
-### Cluster 2 - Families
+### The Families
 * Second largest group with second highest number of youth/senior tickets.
 
-### Cluster 3  - The Travelers
+### The Travelers
 * Had the greatest distance traveled, but not the highest order to trip data.
 
-### Cluster 4 - The Planners
+### Advance Planners
 * Highest mean order to trip date, meaning they planned furthest in advance.
 
 
 # Contents
 * Introduction
+* Conclusions
 * Visualizations and Graphs
 * Summary
 * Recommendations
@@ -120,7 +121,8 @@ Click on this interactive cluster map to look at the number of skiers in each re
 
 
 # Future work
-With skiers separated into specific clusters it is now possible to target certain types of customers and focus marketing strategies based on the five groups, both for current customers as well as future customers.
+With skiers separated into specific clusters it is now possible to target certain types of customers and focus marketing strategies based on the five groups. This model can be used for both current customers as well as future customers.
+
 
 ### Google Distance API
 For about 100 dollars the Google Distance API can accurately calculate the driving distance for each customer ($5 per 1000 customers) based on zip code. While I'm not sure if this would change the numbers significantly, it would certainly be a more accurate statistic.
