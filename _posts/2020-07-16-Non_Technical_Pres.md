@@ -11,17 +11,17 @@ Hopefully the information in this summary is useful and can be applied in a mean
 After much research and review of the data that was shared with me, I was able to use a data science algorithm to help me cluster skiers based on similar characteristics. I put the skiers into five categories: The Money-Makers, The Family Group, The Planners, The Travelers, and the largest group, The One-Time Visitors.The specific details for each group can be found in Conclustions below.
 
 ## Conclusions
+### Cluster 0 - One Time Visitors
+* Largest group with high number of single-day adult tickets.
+
 ### Cluster 1 - The Money Makers
 * Had the highest number of trips, revenue, and multiple tickets bought (came in groups).
-
-### Cluster 3  - The Travelers
-* Had the greatest distance traveled, but not the highest order to trip data.
 
 ### Cluster 2 - Families
 * Second largest group with second highest number of youth/senior tickets.
 
-### Cluster 0 - One Time Visitors
-* Largest group with high number of single-day adult tickets.
+### Cluster 3  - The Travelers
+* Had the greatest distance traveled, but not the highest order to trip data.
 
 ### Cluster 4 - The Planners
 * Highest mean order to trip date, meaning they planned furthest in advance.
