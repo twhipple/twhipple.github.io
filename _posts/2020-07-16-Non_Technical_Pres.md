@@ -38,17 +38,17 @@ After much research and review of the data that was shared with me, I was able t
 ![](https://raw.githubusercontent.com/twhipple/twhipple.github.io/master/img/Total_Adult_Tickets.png)
 
 
-### Types of Tickets
+### Tickets Sold Graffic
 * Single-day, adult tickets are the most common.
 ![](https://raw.githubusercontent.com/twhipple/twhipple.github.io/master/img/Ticket_options.png)
 
 
-### Types of Tickets
+### Types of Tickets Bar Graph
 ![](https://raw.githubusercontent.com/twhipple/twhipple.github.io/master/img/Final_Notebook_66_0.png)
 
 
 ### United States Zip Code Demographic
-For about 200 dollars the US Zip Code Demographic can be used to include much more specific demographic information for each zip code in my dataset - including income and education levels, home and rental costs, specific age and gender stats as well as all population numbers.
+For about $200 dollars the US Zip Code Demographic can be used to include much more specific demographic information for each zip code in my dataset - including income and education levels, home and rental costs, specific age and gender stats as well as all population numbers.
 <a href="https://www.unitedstateszipcodes.org/zip-code-database/">United States Zip Code Demographic Link</a>
 
 
